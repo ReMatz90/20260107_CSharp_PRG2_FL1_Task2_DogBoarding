@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("20260107_C#_PRG2_FL1.2_DogBoarding")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc261ed86faea721419bd4d9f54df52f536f110f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b644e57ca186e8fe79e62084ec7255b1b6b4d01d")]
 [assembly: System.Reflection.AssemblyProductAttribute("20260107_C#_PRG2_FL1.2_DogBoarding")]
 [assembly: System.Reflection.AssemblyTitleAttribute("20260107_C#_PRG2_FL1.2_DogBoarding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

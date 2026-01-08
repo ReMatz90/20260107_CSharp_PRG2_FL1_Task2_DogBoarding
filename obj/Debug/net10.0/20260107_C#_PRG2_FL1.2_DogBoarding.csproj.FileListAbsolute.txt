@@ -12,3 +12,4 @@
 /Users/rematz90/Documents/_home/_Studium/_VS Code/20260107_C#_PRG2_FL1.2_DogBoarding/obj/Debug/net10.0/20260107_C#_PRG2_FL1.2_DogBoarding.pdb
 /Users/rematz90/Documents/_home/_Studium/_VS Code/20260107_C#_PRG2_FL1.2_DogBoarding/obj/Debug/net10.0/20260107_C#_PRG2_FL1.2_DogBoarding.genruntimeconfig.cache
 /Users/rematz90/Documents/_home/_Studium/_VS Code/20260107_C#_PRG2_FL1.2_DogBoarding/obj/Debug/net10.0/ref/20260107_C#_PRG2_FL1.2_DogBoarding.dll
+/Users/rematz90/Documents/_home/_Studium/_VS Code/20260107_C#_PRG2_FL1.2_DogBoarding/obj/Debug/net10.0/20260107_C#_PRG2_FL1.2_DogBoarding.sourcelink.json
