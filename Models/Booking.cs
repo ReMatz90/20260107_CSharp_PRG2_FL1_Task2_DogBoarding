@@ -1,4 +1,5 @@
 using System;
+using DogBoarding.Enums;
 
 namespace DogBoarding.Models
 {
@@ -10,6 +11,8 @@ namespace DogBoarding.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
+        public BookingStatus Status { get; private set; }
+
         #endregion
 
         #region Constructor
@@ -19,6 +22,8 @@ namespace DogBoarding.Models
             Dog = dog;
             StartDate = startDate;
             EndDate = endDate;
+
+            Status = BookingStatus.Requested;
         }
 
         #endregion
