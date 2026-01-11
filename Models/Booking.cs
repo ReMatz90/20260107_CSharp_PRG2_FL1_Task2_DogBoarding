@@ -122,20 +122,20 @@ namespace DogBoarding.Models
 
         //Maybe alter ; to , for German-Excel-Version compatibility
 
-        /*public string ToCSV()
+        public string ToCSV()
         {
-            return string.Join(",",
+            return string.Join(";",
                 Dog.OwnerName,
                 Dog.DogName,
                 Dog.DogWeight,
                 StartDate.ToString("yyyy-MM-dd"),
                 EndDate.ToString("yyyy-MM-dd"),
                 DaysBooked,
-                Dog.PricePerDay.ToString("F2"),
-                (DaysBooked * Dog.PricePerDay).ToString("F2"),
+                PricePerDay.ToString("F2"),
+                (DaysBooked * PricePerDay).ToString("F2"),
                 Status.ToString()
             );
-        }*/
+        }
 
 
         #endregion
