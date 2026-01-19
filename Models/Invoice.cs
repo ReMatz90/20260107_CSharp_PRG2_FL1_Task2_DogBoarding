@@ -79,14 +79,28 @@ namespace DogBoarding.Models
             Status = newStatus;
         }
 
+        #endregion
 
+        #region CSV
 
+        public static string CsvHeader =>
+            "InvoiceNumber;InvoiceDate;Amount;Status;OwnerName;DogName;StartDate;EndDate";
 
-
-
-
-
+        public string ToCsv()
+        {
+            return string.Join(";",
+                InvoiceNumber,
+                InvoiceDate.ToString("yyyy-MM-dd"),
+                Amount.ToString("F2"),
+                Status,
+                Booking.Dog.OwnerName,
+                Booking.Dog.DogName,
+                Booking.StartDate.ToString("yyyy-MM-dd"),
+                Booking.EndDate.ToString("yyyy-MM-dd")
+            );
+        }
 
         #endregion
+
     }
 }
