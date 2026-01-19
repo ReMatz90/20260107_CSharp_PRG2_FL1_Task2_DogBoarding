@@ -1,5 +1,6 @@
 using DogBoarding.Enums;
 using DogBoarding.Models;
+using DogBoarding.Services;
 
 namespace DogBoarding.Models
 
@@ -21,14 +22,15 @@ namespace DogBoarding.Models
 
         #region Constructor
 
-        public Invoice(string invoiceNumber,  Booking booking)
+        public Invoice(InvoiceNumberGenerator generator, Booking booking)
         {
-            InvoiceNumber = invoiceNumber;
+            InvoiceNumber = generator.GenerateNext();
             Booking = booking;
             Amount = booking.TotalPrice;
             InvoiceDate = DateTime.Now;
             Status = InvoiceStatus.Created;
         }
+
 
         #endregion
 
