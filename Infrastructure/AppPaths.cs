@@ -21,15 +21,43 @@ namespace DogBoarding.Infrastructure
             }
         }
 
+        public static string DogBoardingRoot
+        {
+            get
+            {
+                string path = Path.Combine(ICloudDesktop, "DogBoarding");
+
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+
+                return path;
+            }
+        }
+
+        public static string InvoicesDirectory
+        {
+            get
+            {
+                string path = Path.Combine(DogBoardingRoot, "PDF_Invoices");
+
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+
+                return path;
+            }
+        }
+
+
+
         public static string BookingCsvFile
         {
             get
             {
-                return Path.Combine(
-                    ICloudDesktop,
-                    "DogBoarding",
-                    "bookings.csv"
-                );
+                return Path.Combine(DogBoardingRoot,"bookings.csv");
             }
         }
     }
